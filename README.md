@@ -14,5 +14,8 @@ followed by
 
 `npm start`
 
+## Testing
+This repo includes a test for continued validation. Unfortunatley Jest is not compatible with WebGl which means a different testing library must be used or a campatible mockup must be manufactured.
+
 ## License
 This project is open source and is licenced under the MIT license.
