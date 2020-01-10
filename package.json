@@ -4,7 +4,7 @@
   "description": "A review time project",
   "main": "index.js",
   "scripts": {
-    "test": "mocha **/*.test.js *.test.js",
+    "test": "jest --watchAll",
     "build": "webpack",
     "build-watch": "webpack -w",
     "start": "webpack -w & nodemon server/start.js"
@@ -15,6 +15,7 @@
     "skeleton"
   ],
   "dependencies": {
+    "canvas": "^2.6.1",
     "chalk": "^1.1.3",
     "express": "^4.17.1",
     "react": "^15.3.2",
@@ -23,11 +24,16 @@
     "three": "^0.87.1"
   },
   "devDependencies": {
+    "@babel/preset-env": "^7.7.7",
+    "@babel/preset-react": "^7.7.4",
     "babel-core": "^6.26.0",
+    "babel-jest": "^24.9.0",
     "babel-loader": "^7.1.2",
     "babel-preset-es2015": "^6.24.1",
     "babel-preset-react": "^6.24.1",
     "babel-preset-stage-2": "^6.24.1",
+    "jest": "^24.9.0",
+    "react-test-renderer": "^16.12.0",
     "volleyball": "^1.4.1",
     "webpack": "^3.5.5"
   }
